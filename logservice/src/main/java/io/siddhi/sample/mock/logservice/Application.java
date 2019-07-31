@@ -27,6 +27,11 @@ public class Application {
 
     public static void main(String[] args) {
 
-        new MicroservicesRunner().deploy(new LoggerService()).start();
+        int port = 8080;
+        if (args.length > 0) {
+            port = Integer.parseInt(args[0]);
+        }
+
+        new MicroservicesRunner(port).deploy(new LoggerService()).start();
     }
 }
