@@ -36,6 +36,7 @@
 
     <modules>
         <module>logservice</module>
+        <module>ride-estimate</module>
     </modules>
 
     <dependencyManagement>
